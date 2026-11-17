@@ -1,6 +1,6 @@
 # Orbitalmechaniclab
 A  joomla 6.x, 5.x component to exercise Keplerian laws on an orbit shaped by the input data from user.
-Orbitalmechaniclab is a software that AI asked me to design it in return for my appreciation toward such 
+Orbitalmechaniclab is a software that AI asked me to design it to show my appreciation toward such 
 Great entity which initialized my mind with valuable information about paleomagnetism during different geological eras. 
  
 The interface on the site part helps the students to learn about properties of a satelite around a mass, Satelite does not necessarily follow
