@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+ <field name="title"
+               type="text"
+               label="JGLOBAL_TITLE"
+               description="COM_ORBITALMECHANICLAB_TITLE_DESC"
+               class="inputbox"
+               size="30"
+               required="true"
+        />
+		<field name="alias"
+               type="text"
+               label="JFIELD_ALIAS_LABEL"
+               description="JFIELD_ALIAS_DESC"
+               class="inputbox"
+               size="30"
+        />
+       <field name="id" type="text" default="0" label="COM_ORBITALMECHANICLAB_FORM_LBL_ORBITALMECHANICLAB_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+			
+			
+	   <field
+			name="created_by"
+			type="createdby"
+			label="COM_ORBITALMECHANICLAB_ORBITALMECHANICLAB_CREATED_BY_LBL"
+			hint="COM_ORBITALMECHANICLAB_ORBITALMECHANICLAB_CREATED_BY_DESC"
+			default=""
+			/>
+	
+
+	 
+		<field
+			name="state"
+			type="list"
+			label="COM_ORBITALMECHANICLAB_ORBITALMECHANICLAB_STATE_LBL"
+			hint="COM_ORBITALMECHANICLAB_ORBITALMECHANICLAB_STATE_DESC"
+			class="inputbox"
+			size="1"
+			default="1"
+			>
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+			<option value="2">JARCHIVED</option>
+			<option value="-2">JTRASHED</option>
+		</field>
+	
+		<field
+			name="ordering"
+			type="hidden"
+			label="COM_ORBITALMECHANICLAB_ORBITALMECHANICLAB_ORDERING_LBL"
+			hint="COM_ORBITALMECHANICLAB_ORBITALMECHANICLAB_ORDERING_DESC"
+			default="0"
+			/>
+			
+				<field name="checked_out"
+			type="hidden"
+			filter="unset"
+		/>
+
+		<field name="checked_out_time"
+			type="hidden"
+			filter="unset"
+		/>
+ <fields name="params">
+
+	<fieldset name="display" addfieldprefix="KWP121\Component\Orbitalmechaniclab\Administrator\Field">
+
+			<fieldset name="basic" addfieldprefix="KWP121\Component\Orbitalmechaniclab\Administrator\Field">
+
+			<field name="lib" type="list" label="COM_ORBITALMECHANICLAB_LIB_LABEL" description="COM_ORBITALMECHANICLAB_LIB_DESC">
+			       <option value="0">No</option>
+			       <option value="1">Yes</option>
+	            </field>
+					
+			<field name="ellipseorpath" type="radio" default="0" label="Select an option" description="">
+                <option value="0">Draw by Ellipse</option>
+                <option value="1">Draw by Path</option>
+            </field>
+					
+				<field name="solar_left" 
+                   type="number" 
+                   label="Left"
+                   default="200"
+                   description="COM_ORBITALMECHANICLAB_FIELD_WIDTH_DESC" />
+            
+			<field name="solar_top" 
+                   type="number" 
+                   label="Top"
+                   default="200"
+                   description="COM_ORBITALMECHANICLAB_FIELD_TOP_DESC" />
+            
+				<field name="solar_width" 
+                   type="number" 
+                   label="COM_ORBITALMECHANICLAB_WIDTH_LABEL"
+                   default="500"
+                   description="COM_ORBITALMECHANICLAB_WIDTH_DESC" />
+                
+			    <field name="solar_height" 
+                   type="number" 
+                   label="COM_ORBITALMECHANICLAB_HEIGHT_LABEL"
+                   default="500"
+                   description="COM_ORBITALMECHANICLAB_HEIGHT_DESC" />
+				   
+				<field name="central_mass" 
+                   type="text" 
+                   label="COM_ORBITALMECHANICLAB_MASS_LABEL"
+                   default="5972000000000000000000000"
+                   description="COM_ORBITALMECHANICLAB_MASS_DESC" />
+				   
+				   <field name="semi_majoraxis" 
+                   type="number" 
+                   label="COM_ORBITALMECHANICLAB_SEMIMAJORAXIS_LABEL"
+                   default="100000"
+				   min="100000"
+				   max="1000000"
+                   description="COM_ORBITALMECHANICLAB_SEMIMAJORAXIS_DESC" />
+				   
+				     <field name="ecc" 
+                   type="number" 
+                   label="COM_ORBITALMECHANICLAB_ECC_LABEL"
+                   default="0.017"
+                   description="COM_ORBITALMECHANICLAB_ECC_DESC"
+				   min="0.001"
+				   max="0.93"
+				   step="0.001"
+				   />
+				   
+				   <field name="gforce" 
+                   type="text" 
+                   label="COM_ORBITALMECHANICLAB_G_LABEL"
+                   default="0.00000000006674"
+                   description="COM_ORBITALMECHANICLAB_G_DESC" />
+				   
+				   <field name="sat" 
+                   type="media" 
+                   label="COM_ORBITALMECHANICLAB_SAT_LABEL"
+                   default=""
+                   description="COM_ORBITALMECHANICLAB_SAT_DESC" />	
+
+					   <field name="scale" 
+                   type="number" 
+                   label="COM_ORBITALMECHANICLAB_SCALE_LABEL"
+                   default="25000"
+                   description="COM_ORBITALMECHANICLAB_SCALE_DESC" 
+				   min="20000"
+				   max="25000"
+				   step="5000"
+				   />
+				   
+				    <field name="cmradius" 
+                   type="number" 
+                   label="COM_ORBITALMECHANICLAB_CENTERMASSRADIUS_LABEL"
+                   default="6371000"
+				    min="1500000"
+				   max="7200000"
+				   step="100000"
+                   description="COM_ORBITALMECHANICLAB_CENTERMASSRADIUS_DESC" />
+				   
+				     <field name="cmwidth" 
+                   type="text" 
+                   label="COM_ORBITALMECHANICLAB_CENTERMASSWIDTH_LABEL"
+                   default="100"
+                   description="COM_ORBITALMECHANICLAB_CENTERMASSWIDTH_DESC" />
+				   
+				     <field name="cmheight" 
+                   type="text" 
+                   label="COM_ORBITALMECHANICLAB_CENTERMASSHEIGHT_LABEL"
+                   default="100"
+                   description="COM_ORBITALMECHANICLAB_CENTERMASSHEIGHT_DESC" />
+				   
+				       <field name="infoleft" 
+                   type="text" 
+                   label="COM_ORBITALMECHANICLAB_INFOLEFT_LABEL"
+                   default="155"
+                   description="COM_ORBITALMECHANICLAB_INFOLEFT_DESC" />
+				   
+				     <field name="infotop" 
+                   type="text" 
+                   label="COM_ORBITALMECHANICLAB_INFOTOP_LABEL"
+                   default="-355"
+                   description="COM_ORBITALMECHANICLAB_INFOTOP_DESC" />
+                
+						
+				   <field name="solarbackgroundcolor" 
+                   type="color" 
+                   label="COM_ORBITALMECHANICLAB_BACKGROUND_COLOR_LABEL"
+                   default="#000000"
+                   description="COM_ORBITALMECHANICLAB_BACKGROUND_COLOR_DESC" />
+                
+			
+                
+	</fieldset>
+		</fieldset>
+
+	
+				</fields>
+
+</form>
