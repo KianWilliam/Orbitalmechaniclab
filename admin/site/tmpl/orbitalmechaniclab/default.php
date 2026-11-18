@@ -811,7 +811,7 @@ form{
 
        
 	<div class="orbitalmechaniclab" >
-	<form name="data" method="post" action="<?php Route::_('index.php?option=com_orbitalmechaniclab&view=orbitalmechaniclab')?>" onsubmit="checkheight()" >
+	<form name="data" method="post" action="<?php Route::_('index.php?option=com_orbitalmechaniclab&view=orbitalmechaniclab')?>" onsubmit="" >
 		Satellite Height: <?php echo $hightest; ?><input id="sath" type="number" max="1000000" min="100000" step="10000" name="hightest" value="" >
 
 		Eccentricity :<?php echo $etest; ?> <input id="ec" type="number" max="0.93" min="0.01" step="0.001" name="etest"  value="">
